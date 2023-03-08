@@ -1,1 +1,0 @@
-{"status":"success","data":{"city":"Milano","state":"Lombardy","country":"Italy","location":{"type":"Point","coordinates":[9.19746075,45.470501]},"current":{"pollution":{"ts":"2023-03-08T10:00:00.000Z","aqius":107,"mainus":"p2","aqicn":54,"maincn":"p2"},"weather":{"ts":"2023-03-08T10:00:00.000Z","tp":12,"pr":1005,"hu":65,"ws":1.54,"wd":130,"ic":"01d"}}}}
