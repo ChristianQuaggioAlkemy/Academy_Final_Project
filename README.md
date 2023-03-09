@@ -8,7 +8,7 @@ Eseguire lo script step_1_collect_data.sh per integrare i dati contenuti in eart
 ./step_1_collect_data.sh <stock_code> <date (YYYY-MM-DD)>
 ```
 Dove <stock_code> è il codice identificativo del titolo azionario e <date> è la data di riferimento nel formato YYYY-MM-DD. 
-Questo script eseguirà diverse chiamate alle API per arricchire i dati sul terremoto con altre informazioni, come il luogo di origine e informazioni demografiche. Verranno raccolti anche i dati relativi al valore di chiusura dell'azione scelta per ogni giorno dalla data scelta. I dati verranno salvati in tre file csv: earthquakes_data, countries_info e index_stocks_data.
+Questo script eseguirà diverse chiamate alle API per arricchire i dati sul terremoto con altre informazioni, come il luogo di origine e informazioni demografiche. Verranno raccolti anche i dati relativi al valore di chiusura dell'azione scelta per ogni giorno dalla data scelta. I dati verranno salvati in tre file csv: **earthquakes_data**, **countries_info** e **index_stocks_data**.
 
 Creare un database su postgres e popolarlo con le informazioni raccolte utilizzando lo script step_2_load_psql.sh.
 ```
