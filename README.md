@@ -1,5 +1,5 @@
 # Creazione di un database contenente informazioni su terremoti e valori azionari
-Questo progetto fornisce uno script di shell per creare un database contenente informazioni su terremoti e valori azionari. L'obiettivo principale del progetto è fornire un database completo e integrato per l'analisi di dati relativi a terremoti e valori azionari.
+Questo progetto fornisce degli script per creare un database contenente informazioni su terremoti e valori azionari. L'obiettivo principale del progetto è fornire un database completo e integrato per l'analisi di dati relativi a terremoti e valori azionari.
 
 ## Utilizzo
 
