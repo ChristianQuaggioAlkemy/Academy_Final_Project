@@ -3,6 +3,7 @@ from countryinfo import CountryInfo
 
 # Leggi il file di input
 input_data = pd.read_csv('country_codes.csv')
+input_data['code'] = input_data['code'].astype(str)
 
 # Crea una nuova colonna 'population' e 'urban_density'
 input_data['population'] = None
@@ -32,13 +33,9 @@ for i, row in input_data.iterrows():
     except KeyError:
         print(f"Invalid ISO-2 code '{code}' for {country}. Skipping.")
 
-# Scrivi il DataFrame aggiornato in un file di output
-input_data.to_csv('countries_info.csv', index=False)
-
-
 # Leggi i due file csv
 df_codes = pd.read_csv('country_codes.csv')
-df_info = pd.read_csv('paesi_info.csv')
+df_info = input_data
 
 # Seleziona solo le colonne desiderate dal dataframe df_info
 input_data = input_data.loc[:, ['code', 'population', 'urban_density']]
@@ -47,4 +44,4 @@ input_data = input_data.loc[:, ['code', 'population', 'urban_density']]
 df_merged = pd.merge(df_codes, input_data, on='code', how='left')
 
 # Salva il risultato in un nuovo file csv
-df_merged.to_csv('merged.csv', index=False)
+df_merged.to_csv('countries_info.csv', index=False)
