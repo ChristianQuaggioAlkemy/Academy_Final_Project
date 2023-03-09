@@ -4,3 +4,68 @@ sources:
   - name: public
     tables:
       - name: earthquake_data
+        config:
+            re_data_monitored: true
+        tests:
+            - dbt_expectations.expect_table_column_count_to_equal:
+                value: 8
+            - dbt_expectations.expect_table_columns_to_contain_set:
+                column_list: ["data", "location", "country", "latitude", "longitude", "depth", "mag", "magtype"]
+                transform: lower
+            - dbt_expectations.expect_table_row_count_to_equal_other_table:
+                compare_model: ref("dwh_index_stock_data")
+        columns:
+          - name: data
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_not_be_null
+                - dbt_expectations.expect_column_values_to_be_unique
+                - dbt_expectations.expect_column_values_to_be_of_type:
+                    column_type: date
+                    
+          - name: location
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: character
+                    
+          - name: country
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_be_of_type:
+                    column_type: character
+#                - dbt.expectation.expect_column_value_lengths_to_equal:
+#                    value: 2
+                    
+          - name: latitude
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric (50,50)
+                    
+          - name: longitude
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric (50,50)
+                    
+          - name: depth
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric (10,10)
+                    
+          - name: mag
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric (2,3)
+                    
+          - name: magtype
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_be_of_type:
+                    column_type: character varying
+                    
+               
+                

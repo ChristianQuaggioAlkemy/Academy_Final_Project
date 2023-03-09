@@ -4,3 +4,26 @@ sources:
   - name: public
     tables:
       - name: index_stock_data
+        config:
+            re_data_monitored: true
+        tests:
+            - dbt_expectations.expect_table_column_count_to_equal:
+                value: 2
+            - dbt_expectations.expect_table_columns_to_contain_set:
+                column_list: ["data", "adjclose"]
+                transform: lower
+
+        columns:
+          - name: data
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_not_be_null
+                - dbt_expectations.expect_column_values_to_be_unique
+                - dbt_expectations.expect_column_values_to_be_of_type:
+                    column_type: date
+                    
+          - name: adjclose
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric (10,10)

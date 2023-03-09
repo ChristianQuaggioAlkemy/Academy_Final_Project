@@ -1,0 +1,133 @@
+[0m12:15:43  Running with dbt=1.4.4
+[0m12:15:43  Found 3 models, 31 tests, 0 snapshots, 0 analyses, 511 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[0m12:15:43  
+[0m12:15:44  Concurrency: 1 threads (target='dev')
+[0m12:15:44  
+[0m12:15:44  1 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_country  [RUN]
+[0m12:15:44  1 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_country  [[32mPASS[0m in 0.08s]
+[0m12:15:44  2 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_data  [RUN]
+[0m12:15:44  2 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_data  [[32mPASS[0m in 0.04s]
+[0m12:15:44  3 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_depth  [RUN]
+[0m12:15:44  3 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_depth  [[32mPASS[0m in 0.04s]
+[0m12:15:44  4 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_latitude  [RUN]
+[0m12:15:44  4 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_latitude  [[32mPASS[0m in 0.04s]
+[0m12:15:44  5 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_location  [RUN]
+[0m12:15:44  5 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_location  [[32mPASS[0m in 0.04s]
+[0m12:15:44  6 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_longitude  [RUN]
+[0m12:15:44  6 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_longitude  [[32mPASS[0m in 0.04s]
+[0m12:15:44  7 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_mag  [RUN]
+[0m12:15:44  7 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_mag  [[32mPASS[0m in 0.04s]
+[0m12:15:44  8 of 31 START test dbt_expectations_source_expect_column_to_exist_public_earthquake_data_magtype  [RUN]
+[0m12:15:44  8 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_earthquake_data_magtype  [[32mPASS[0m in 0.04s]
+[0m12:15:44  9 of 31 START test dbt_expectations_source_expect_column_to_exist_public_index_stock_data_adjclose  [RUN]
+[0m12:15:44  9 of 31 PASS dbt_expectations_source_expect_column_to_exist_public_index_stock_data_adjclose  [[32mPASS[0m in 0.04s]
+[0m12:15:44  10 of 31 START test dbt_expectations_source_expect_column_to_exist_public_index_stock_data_date  [RUN]
+[0m12:15:44  10 of 31 FAIL 1 dbt_expectations_source_expect_column_to_exist_public_index_stock_data_date  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  11 of 31 START test dbt_expectations_source_expect_column_value_lengths_to_between_public_earthquake_data_magtype__5__1__mag_is_not_null  [RUN]
+[0m12:15:44  11 of 31 ERROR dbt_expectations_source_expect_column_value_lengths_to_between_public_earthquake_data_magtype__5__1__mag_is_not_null  [[31mERROR[0m in 0.01s]
+[0m12:15:44  12 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_country__character_varying  [RUN]
+[0m12:15:44  12 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_country__character_varying  [[31mFAIL 1[0m in 0.11s]
+[0m12:15:44  13 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_data__date  [RUN]
+[0m12:15:44  13 of 31 PASS dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_data__date  [[32mPASS[0m in 0.04s]
+[0m12:15:44  14 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_depth__numeric_10_10_  [RUN]
+[0m12:15:44  14 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_depth__numeric_10_10_  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  15 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_latitude__numeric_50_50_  [RUN]
+[0m12:15:44  15 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_latitude__numeric_50_50_  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  16 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_location__character_varying  [RUN]
+[0m12:15:44  16 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_location__character_varying  [[31mFAIL 1[0m in 0.05s]
+[0m12:15:44  17 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_longitude__numeric_50_50_  [RUN]
+[0m12:15:44  17 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_longitude__numeric_50_50_  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  18 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_mag__numeric_2_3_  [RUN]
+[0m12:15:44  18 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_mag__numeric_2_3_  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  19 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_magtype__character_varying  [RUN]
+[0m12:15:44  19 of 31 PASS dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_magtype__character_varying  [[32mPASS[0m in 0.04s]
+[0m12:15:44  20 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_index_stock_data_adjclose__numeric_10_10_  [RUN]
+[0m12:15:44  20 of 31 FAIL 1 dbt_expectations_source_expect_column_values_to_be_of_type_public_index_stock_data_adjclose__numeric_10_10_  [[31mFAIL 1[0m in 0.04s]
+[0m12:15:44  21 of 31 START test dbt_expectations_source_expect_column_values_to_be_of_type_public_index_stock_data_date__date  [RUN]
+[0m12:15:45  21 of 31 PASS dbt_expectations_source_expect_column_values_to_be_of_type_public_index_stock_data_date__date  [[32mPASS[0m in 0.04s]
+[0m12:15:45  22 of 31 START test dbt_expectations_source_expect_column_values_to_be_unique_public_earthquake_data_data  [RUN]
+[0m12:15:45  22 of 31 PASS dbt_expectations_source_expect_column_values_to_be_unique_public_earthquake_data_data  [[32mPASS[0m in 0.05s]
+[0m12:15:45  23 of 31 START test dbt_expectations_source_expect_column_values_to_be_unique_public_index_stock_data_date  [RUN]
+[0m12:15:45  23 of 31 ERROR dbt_expectations_source_expect_column_values_to_be_unique_public_index_stock_data_date  [[31mERROR[0m in 0.03s]
+[0m12:15:45  24 of 31 START test dbt_expectations_source_expect_column_values_to_not_be_null_public_earthquake_data_data  [RUN]
+[0m12:15:45  24 of 31 PASS dbt_expectations_source_expect_column_values_to_not_be_null_public_earthquake_data_data  [[32mPASS[0m in 0.04s]
+[0m12:15:45  25 of 31 START test dbt_expectations_source_expect_column_values_to_not_be_null_public_index_stock_data_date  [RUN]
+[0m12:15:45  25 of 31 ERROR dbt_expectations_source_expect_column_values_to_not_be_null_public_index_stock_data_date  [[31mERROR[0m in 0.02s]
+[0m12:15:45  26 of 31 START test dbt_expectations_source_expect_table_column_count_to_equal_public_earthquake_data_8  [RUN]
+[0m12:15:45  26 of 31 PASS dbt_expectations_source_expect_table_column_count_to_equal_public_earthquake_data_8  [[32mPASS[0m in 0.04s]
+[0m12:15:45  27 of 31 START test dbt_expectations_source_expect_table_column_count_to_equal_public_index_stock_data_2  [RUN]
+[0m12:15:45  27 of 31 PASS dbt_expectations_source_expect_table_column_count_to_equal_public_index_stock_data_2  [[32mPASS[0m in 0.04s]
+[0m12:15:45  28 of 31 START test dbt_expectations_source_expect_table_columns_to_contain_set_public_earthquake_data_data__location__country__latitude__longitude__depth__mag__magtype__lower  [RUN]
+[0m12:15:45  28 of 31 PASS dbt_expectations_source_expect_table_columns_to_contain_set_public_earthquake_data_data__location__country__latitude__longitude__depth__mag__magtype__lower  [[32mPASS[0m in 0.06s]
+[0m12:15:45  29 of 31 START test dbt_expectations_source_expect_table_columns_to_contain_set_public_index_stock_data_data__adjclose__lower  [RUN]
+[0m12:15:45  29 of 31 PASS dbt_expectations_source_expect_table_columns_to_contain_set_public_index_stock_data_data__adjclose__lower  [[32mPASS[0m in 0.04s]
+[0m12:15:45  30 of 31 START test dbt_expectations_source_expect_table_row_count_to_equal_other_table_public_earthquake_data_ref_dwh_index_stock_data_  [RUN]
+[0m12:15:45  30 of 31 PASS dbt_expectations_source_expect_table_row_count_to_equal_other_table_public_earthquake_data_ref_dwh_index_stock_data_  [[32mPASS[0m in 0.06s]
+[0m12:15:45  31 of 31 START test dbt_source_expectation_public_earthquake_data_country__location_is_not_null__2  [RUN]
+[0m12:15:45  31 of 31 ERROR dbt_source_expectation_public_earthquake_data_country__location_is_not_null__2  [[31mERROR[0m in 0.01s]
+[0m12:15:45  
+[0m12:15:45  Finished running 31 tests in 0 hours 0 minutes and 1.61 seconds (1.61s).
+[0m12:15:45  
+[0m12:15:45  [31mCompleted with 12 errors and 0 warnings:[0m
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_to_exist_public_index_stock_data_date (models/sources/public/index_stock_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/index_stock_data.yml/dbt_expectations_source_expect_f81866342351cc4cc7a4a07e3857bf01.sql
+[0m12:15:45  
+[0m12:15:45  [33mCompilation Error in test dbt_expectations_source_expect_column_value_lengths_to_between_public_earthquake_data_magtype__5__1__mag_is_not_null (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    'dict object' has no attribute 'test_expect_column_value_lengths_to_between'. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_country__character_varying (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_9cc56855f274574411595ca4a5d2b372.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_depth__numeric_10_10_ (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_315bac6e415d3d06abc9cc04a7db6b69.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_latitude__numeric_50_50_ (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_1131bab2305da27ab140dd932e488d59.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_location__character_varying (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_d5071680af76ffedc8e643fa5ccc20cb.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_longitude__numeric_50_50_ (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_30eceba35cc5e43adbe8cad9b004751e.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_earthquake_data_mag__numeric_2_3_ (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/earthquake_data.yml/dbt_expectations_source_expect_b061a05ca969292849f345cea3641a58.sql
+[0m12:15:45  
+[0m12:15:45  [31mFailure in test dbt_expectations_source_expect_column_values_to_be_of_type_public_index_stock_data_adjclose__numeric_10_10_ (models/sources/public/index_stock_data.yml)[0m
+[0m12:15:45    Got 1 result, configured to fail if != 0
+[0m12:15:45  
+[0m12:15:45    compiled Code at target/compiled/final_project/models/sources/public/index_stock_data.yml/dbt_expectations_source_expect_eb82bcdac310ad68cf2039c5b5c48649.sql
+[0m12:15:45  
+[0m12:15:45  [33mDatabase Error in test dbt_expectations_source_expect_column_values_to_be_unique_public_index_stock_data_date (models/sources/public/index_stock_data.yml)[0m
+[0m12:15:45    column "date" does not exist
+[0m12:15:45    LINE 15:         date
+[0m12:15:45                     ^
+[0m12:15:45    HINT:  Perhaps you meant to reference the column "index_stock_data.data".
+[0m12:15:45    compiled Code at target/run/final_project/models/sources/public/index_stock_data.yml/dbt_expectations_source_expect_6a557316e81d7fcb028e7c95bd84e72f.sql
+[0m12:15:45  
+[0m12:15:45  [33mDatabase Error in test dbt_expectations_source_expect_column_values_to_not_be_null_public_index_stock_data_date (models/sources/public/index_stock_data.yml)[0m
+[0m12:15:45    column "date" does not exist
+[0m12:15:45    LINE 17:   date is not null as expression
+[0m12:15:45               ^
+[0m12:15:45    HINT:  Perhaps you meant to reference the column "index_stock_data.data".
+[0m12:15:45    compiled Code at target/run/final_project/models/sources/public/index_stock_data.yml/dbt_expectations_source_expect_eee789e67de7905d3539b3df41f1f851.sql
+[0m12:15:45  
+[0m12:15:45  [33mCompilation Error in test dbt_source_expectation_public_earthquake_data_country__location_is_not_null__2 (models/sources/public/earthquake_data.yml)[0m
+[0m12:15:45    'dict object' has no attribute 'test_expectation'. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m12:15:45  
+[0m12:15:45  Done. PASS=19 WARN=0 ERROR=12 SKIP=0 TOTAL=31

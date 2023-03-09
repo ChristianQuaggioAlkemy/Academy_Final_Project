@@ -3,4 +3,36 @@ version: 2
 sources:
   - name: public
     tables:
-      - name: countries_info
+      - name: countries_info 
+        config:
+            re_data_monitored: true
+        tests:
+            - dbt_expectations.expect_table_column_count_to_equal:
+                value: 4
+            - dbt_expectations.expect_table_columns_to_contain_set:
+                column_list: ["code", "country", "population", "urbandensity"]
+                transform: lower
+        columns:
+          - name: code 
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_not_be_null
+                - dbt_expectations.expect_column_values_to_be_unique
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: character varying
+          - name: country
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: character varying
+          - name: population
+            tests:
+                - dbt_expectations.expect_column_to_exist
+                - dbt_expectations.expect_column_values_to_be_of_type:
+                    column_type: numeric
+          - name: urbandensity
+            tests:
+                - dbt_expectations.expect_column_to_exist
+#                - dbt_expectations.expect_column_values_to_not_be_null
+#                - dbt_expectations.expect_column_values_to_be_of_type:
+#                    column_type: numeric(10,25)
