@@ -43,5 +43,8 @@ input_data = input_data.loc[:, ['code', 'population', 'urban_density']]
 # Esegui la left join sulla colonna code
 df_merged = pd.merge(df_codes, input_data, on='code', how='left')
 
+#Drop temporaneo della riga contenente Namibia -- da sistemare
+df_merged = df_merged.drop(df_merged[df_merged['country'] == 'Namibia'].index)
+
 # Salva il risultato in un nuovo file csv
 df_merged.to_csv('countries_info.csv', index=False)
