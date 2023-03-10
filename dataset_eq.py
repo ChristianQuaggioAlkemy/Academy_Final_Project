@@ -48,6 +48,6 @@ date_df = pd.DataFrame({'Data': dates})
 earthquakes_calendar = pd.merge(date_df, eq2, on='Data', how='left')
 
 # Salva i dati creati in un file csv
-earthquakes_calendar.to_csv('earthquakes_calendar.csv', index=False)
+earthquakes_calendar.to_csv('earthquakes_data.csv', index=False)
 print('esco da dataset_eq')
 

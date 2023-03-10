@@ -7,9 +7,6 @@
 
 SELECT 
     e.data,
-    e.country,
-    e.latitude,
-    e.longitude,
     e.mag,
     e.is_monday,
     e.is_tuesday,
